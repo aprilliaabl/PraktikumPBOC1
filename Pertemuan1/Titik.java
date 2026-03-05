@@ -36,14 +36,14 @@ public class Titik {
         ordinat = y;
     }
 
-    //menggeser nilai absis dan ordinat titik masing-masing sejauh x dan y
+    // menggeser nilai absis dan ordinat titik masing-masing sejauh x dan y
     void geser(double x, double y) {
         absis = absis + x;
-        ordinat = ordinat + y;
+        ordinat = ordinat + x;
     }
 
-    //mencetak koordinat titik
+    // mencetak koordinat titik
     void printTitik() {
-        System.out.println("Titik (" + absis + "," + ordinat + ")") ;
+        System.out.println("Titik (" + absis + "," + ordinat + ")");
     }
 } //end class Titik
