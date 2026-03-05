@@ -4,6 +4,8 @@
 * Tanggal   : 26 Februari 2026 (16:00) 
 */
 
+package praktikum2;
+
 public class MTitik {
     public static void main(String[] args) {
 

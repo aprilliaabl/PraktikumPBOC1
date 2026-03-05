@@ -4,6 +4,8 @@
 * Tanggal   : 26 Februari 2026 () 
 */
 
+package praktikum2;
+
 public class MGaris {
     public static void main(String[] args) {
 

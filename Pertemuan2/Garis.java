@@ -4,8 +4,6 @@
 * Tanggal   : 26 Februari 2026 () 
 */
 
-package praktikum2;
-
 public class Garis {
 
     /*************** ATRIBUT ***************/
@@ -14,6 +12,7 @@ public class Garis {
     private static int counterGaris = 0;
 
     /*************** KONSTRUKTOR ***************/
+
     public Garis() {
         this.titikAwal = new Titik(0,0);
         this.titikAkhir = new Titik(1,1);
@@ -34,10 +33,6 @@ public class Garis {
         return titikAkhir;
     }
 
-    public static int getCounterGaris() {
-        return counterGaris;
-    }
-
     public void setTitikAwal(Titik titikAwal) {
         this.titikAwal = titikAwal;
     }
@@ -46,25 +41,23 @@ public class Garis {
         this.titikAkhir = titikAkhir;
     }
 
+    public static int getCounterGaris() {
+        return counterGaris;
+    }
+
     public double getPanjang() {
         return titikAwal.getJarak(titikAkhir);
     }
 
     public double getGradien() {
-        double dx = titikAkhir.getAbsis() - titikAwal.getAbsis();
-        double dy = titikAkhir.getOrdinat() - titikAwal.getOrdinat();
-
-        if (dx == 0) {
-            throw new ArithmeticException("Gradien tidak terdefinisi (garis vertikal)");
-        }
-
-        return dy / dx;
+    double dx = titikAkhir.getAbsis() - titikAwal.getAbsis();
+    double dy = titikAkhir.getOrdinat() - titikAwal.getOrdinat();
+    return dy / dx;
     }
 
     public Titik getTitikTengah() {
         double xTengah = (titikAwal.getAbsis() + titikAkhir.getAbsis()) / 2;
         double yTengah = (titikAwal.getOrdinat() + titikAkhir.getOrdinat()) / 2;
-
         return new Titik(xTengah, yTengah);
     }
 
@@ -87,10 +80,6 @@ public class Garis {
         double m = getGradien();
         double c = titikAwal.getOrdinat() - (m * titikAwal.getAbsis());
 
-        if (c >= 0) {
-            return "y = " + m + "x + " + c;
-        } else {
-            return "y = " + m + "x - " + Math.abs(c);
-        }
+        return "y = " + m + "x + " + c;
     }
 }
