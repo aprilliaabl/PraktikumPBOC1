@@ -1,5 +1,6 @@
 /*Nama File : Dosen.java
-* Deskripsi : 
+* Deskripsi : Berisi atribut dan method dalam class Dosen 
+              yang merepresentasikan data dosen wali mahasiswa.
 * Pembuat   : Aprillia Abel Cleodora
 * Tanggal   : 5 Maret 2026
 */
