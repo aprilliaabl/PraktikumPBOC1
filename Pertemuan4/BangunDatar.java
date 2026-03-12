@@ -7,6 +7,7 @@
 
 public class BangunDatar {
 
+    /* ATRIBUT */
     private int jmlSisi;
     private String warna;
     private String border;

@@ -1,7 +1,7 @@
 /* 
  * File       : MainProgram.java
  * Deskripsi  : Program utama untuk mengimplementasikan class BangunDatar,
- *               Persegi, dan Lingkaran
+ *              Persegi, dan lingkaran
  * Pembuat    : Aprillia Abel Cleodora
  * Tanggal    : 12 Maret 2026
  */
@@ -27,8 +27,8 @@ public class MainProgram {
         p1.setSisi(4);
 
         // Mengubah warna dan border menggunakan mutator dari BangunDatar
-        p1.setWarna("Biru");
-        p1.setBorder("Putih");
+        p1.setWarna("Merah Muda");
+        p1.setBorder("Hitam");
 
         // Mengubah nilai jari-jari lingkaran
         l1.setJari(7);
