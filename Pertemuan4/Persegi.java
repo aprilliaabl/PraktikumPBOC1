@@ -7,11 +7,11 @@
 
 public class Persegi extends BangunDatar {
 
-    /* ======================= ATRIBUT ======================= */
+    /* ATRIBUT */
 
     private double sisi;
 
-    /* ===================== KONSTRUKTOR ===================== */
+    /* KONSTRUKTOR */
 
     public Persegi() {
         setJmlSisi(4);
@@ -22,19 +22,19 @@ public class Persegi extends BangunDatar {
         this.sisi = sisi;
     }
 
-    /* ======================= SELEKTOR ====================== */
+    /* SELEKTOR */
 
     public double getSisi() {
         return sisi;
     }
 
-    /* ======================= MUTATOR ======================= */
+    /* MUTATOR */
 
     public void setSisi(double sisi) {
         this.sisi = sisi;
     }
 
-    /* ====================== METHOD LAIN ==================== */
+    /*  METHOD LAIN  */
 
     public double getLuas() {
         return sisi * sisi;

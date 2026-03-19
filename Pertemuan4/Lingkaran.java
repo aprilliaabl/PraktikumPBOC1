@@ -7,30 +7,44 @@
 
 public class Lingkaran extends BangunDatar {
 
+    /* ATRIBUT 
+    /* Menyimpan nilai jari-jari lingkaran */
     private double jari;
 
-    public Lingkaran(){
+    /* KONSTRUKTOR 
+    // Konstruktor default
+    /* Menginisialisasi jumlah sisi = 0 (lingkaran tidak memiliki sisi) */
+    public Lingkaran() {
         setJmlSisi(0);
     }
 
-    public double getJari(){
+    /* SELEKTOR 
+    /* Mengambil nilai jari-jari */
+    public double getJari() {
         return jari;
     }
 
-    public void setJari(double jari){
+    /* MUTATOR 
+    /* Mengubah nilai jari-jari */
+    public void setJari(double jari) {
         this.jari = jari;
     }
 
-    public double getLuas(){
+    /* METHOD LAIN
+    /* Menghitung luas lingkaran (π x r x r) */
+    public double getLuas() {
         return Math.PI * jari * jari;
     }
 
-    public double getKeliling(){
+    /* Menghitung keliling lingkaran (2 x π x r) */
+    public double getKeliling() {
         return 2 * Math.PI * jari;
     }
 
+    /* OVERRIDE METHOD 
+    /* Menampilkan informasi lingkaran */
     @Override
-    public void printInfo(){
+    public void printInfo() {
         super.printInfo();
         System.out.println("Jari-jari : " + jari);
     }
