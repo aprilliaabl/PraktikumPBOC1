@@ -55,7 +55,6 @@ public class MainPegawai {
 
         dtp.printInfo();
 
-
         // IMPLEMENTASI DOSEN TAMU 
         System.out.println("DOSEN TAMU");
 
@@ -71,7 +70,6 @@ public class MainPegawai {
         );
 
         dt.printInfo();
-
 
         // IMPLEMENTASI TENDIK 
         System.out.println("TENDIK");
