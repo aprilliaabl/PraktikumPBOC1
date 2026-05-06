@@ -18,7 +18,7 @@ public class MainProgram {
         // Implementasi SELEKTOR
         System.out.println("Jari-jari awal: " + lingkaran.getJariJari());
 
-        // Implementasi MUTATOR
+        // Implementasi MUTATORf
         lingkaran.setJariJari(10);
 
         // Implementasi METHOD LAIN
